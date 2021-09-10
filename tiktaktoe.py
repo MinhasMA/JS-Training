@@ -3,7 +3,10 @@
 
 #player 1 and player 2 - toggle between the two - one at a time
 
-players = ['player1', 'player2']
+players = ['player 1', 'player 2']
+
+choices = ['X', 'O']
+
 def correct_your_choice():
     draw = input("please pick who will start the show:") 
     while draw not in players:
@@ -17,9 +20,24 @@ def first_draw():
             correct_your_choice()
             
         else:
-            print(drawer + " to start")# choose who will start - then build a sequence
+            print(drawer + " to start")
+            
+        choice = input("make your choice please:")
+        while choice not in choices:
+            print("This is an invalid choice. Please pick either X or O")
+        print(drawer + " has picked " + choice)
+            
+def draw_board():
+    row1 = ["-","-","-"]
+    row2 = ["-","-","-"]
+    row3 = ["-","-","-"]
+    
+    print(row1)
+    print(row2)
+    print(row3)
 
-
+def pick_choice():
+    choice = input
 #draw board 
 
 def draw_board():
