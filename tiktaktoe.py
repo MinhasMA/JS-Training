@@ -36,6 +36,16 @@ def draw_board():
     print(row2)
     print(row3)
 
+
+def draw_board2():
+    row1 = ["-","-","-"]
+    row2 = ["-","-","-"]
+    row3 = ["-","-","-"]
+    
+    print(row1) + "r"
+    print(row2) + "s"
+    print(row3) + "t"
+
 def pick_choice():
     choice = input
 #draw board 
